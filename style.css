@@ -1,0 +1,43 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+::selection {
+  background-color: white;
+}
+
+body {
+  font-family: monospace;
+}
+
+header {
+  background-color: rgb(220, 183, 82);
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+button {
+  position: absolute;
+  right: 30px;
+  top: 50px;
+  font-size: 2rem;
+  box-shadow: 0 0 10px 0 white;
+}
+
+h2 {
+  _background: linear-gradient(90deg, rgb(220, 183, 82) 0%, white 0%);
+  padding: 305px 300px 305px 300px;
+  text-align: center;
+  font-size: 8rem;
+}
