@@ -17,20 +17,16 @@ function updateCounter() {
   countNumber.style.background = `linear-gradient(90deg, rgb(220, 183, 82) ${countHundrets}%, white 0%)`;
 }
 
+// Accepted keys (space & enter) for counts
 function keydownHandler(e) {
   if (e.key === " " || e.key === "Enter") {
     updateCounter();
   }
 }
 
+// Reset = Reload page
 function resetCount() {
   location.reload();
-  /*count = 0;
-  countHundrets = 0;
-  countNumber.textContent = count;
-  countNumber.style.background = `linear-gradient(90deg, rgb(220, 183, 82) ${countHundrets}%, white 0%)`;
-  window.document.removeEventListener("keydown", keydownHandler);
-  window.document.addEventListener("keydown", keydownHandler);*/
 }
 
 // Click Listener
@@ -41,5 +37,3 @@ window.document.addEventListener("keydown", keydownHandler);
 
 // Reset Listener
 button.addEventListener("click", resetCount);
-
-//
