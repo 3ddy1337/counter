@@ -17,22 +17,27 @@ function updateCounter() {
   countNumber.style.background = `linear-gradient(90deg, rgb(220, 183, 82) ${countHundrets}%, white 0%)`;
 }
 
+function keydownHandler(e) {
+  if (e.key === " " || e.key === "Enter") {
+    updateCounter();
+  }
+}
+
 function resetCount() {
-  count = 0;
+  location.reload();
+  /*count = 0;
   countHundrets = 0;
   countNumber.textContent = count;
   countNumber.style.background = `linear-gradient(90deg, rgb(220, 183, 82) ${countHundrets}%, white 0%)`;
+  window.document.removeEventListener("keydown", keydownHandler);
+  window.document.addEventListener("keydown", keydownHandler);*/
 }
 
 // Click Listener
 countNumber.addEventListener("click", updateCounter);
 
 // Enter and Space Listener
-window.document.addEventListener("keydown", (e) => {
-  if (e.key === " " || e.key === "Enter") {
-    updateCounter();
-  }
-});
+window.document.addEventListener("keydown", keydownHandler);
 
 // Reset Listener
 button.addEventListener("click", resetCount);
