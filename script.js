@@ -38,6 +38,7 @@ window.document.addEventListener("keydown", keydownHandler);
 // Reset Listener
 button.addEventListener("click", resetCount);
 
+/*
 // Calculate responsive height
 function windowHeight() {
   let result =
@@ -45,9 +46,16 @@ function windowHeight() {
     document.querySelector("header").offsetHeight -
     document.querySelector("h2").offsetHeight;
   result = result / 2 + "px";
+
   countNumber.style.paddingTop = result;
   countNumber.style.paddingBottom = result;
+  
+  document.styleSheet.insertRule(
+    ".height { padding-top: 300px; padding-bottom: 300px; }"
+  );
+  
 }
 
 // Listener for screensize
 window.addEventListener("resize", windowHeight);
+*/
