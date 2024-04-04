@@ -6,7 +6,7 @@
 }
 
 ::selection {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 body {
@@ -36,8 +36,11 @@ button {
 }
 
 h2 {
-  _background: linear-gradient(90deg, rgb(220, 183, 82) 0%, white 0%);
-  padding: 305px 300px 305px 300px;
+  padding-right: auto;
+  padding-left: auto;
+  height: 100%;
+  padding-top: 300px;
+  padding-bottom: 300px;
   text-align: center;
   font-size: 8rem;
 }
