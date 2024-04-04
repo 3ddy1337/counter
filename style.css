@@ -16,6 +16,7 @@ body {
 header {
   background-color: rgb(220, 183, 82);
   padding: 2rem;
+  height: 200px;
 }
 
 h1 {
@@ -38,9 +39,8 @@ button {
 h2 {
   padding-right: auto;
   padding-left: auto;
-  height: 100%;
-  padding-top: 300px;
-  padding-bottom: 300px;
+  _padding-top: 289.5px;
+  _padding-bottom: 289.5px;
   text-align: center;
   font-size: 8rem;
 }
