@@ -5,6 +5,13 @@
   margin: 0 auto;
 }
 
+html,
+body,
+main,
+h2 {
+  height: 100%;
+}
+
 ::selection {
   background-color: rgba(255, 255, 255, 0);
 }
@@ -36,11 +43,16 @@ button {
   box-shadow: 0 0 10px 0 white;
 }
 
+main {
+  height: calc(100% - 200px);
+}
+
 h2 {
+  display: flex;
+  justify-content: center; /* Horizontal zentrieren */
+  align-items: center; /* Vertikal zentrieren */
   padding-right: auto;
   padding-left: auto;
-  padding-top: 290px;
-  padding-bottom: 290px;
   text-align: center;
   font-size: 8rem;
 }
